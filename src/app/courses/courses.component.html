@@ -1,0 +1,30 @@
+<div class="container">
+  <h2>
+    {{ getTitle() }}
+  </h2>
+  <!-- <button class="btn" [style.backgroundColor]="'red'">Save</button> -->
+  <!-- <table>
+    <tr>
+      <td [attr.colspan]="colSpan">
+  
+      </td>
+    </tr>
+  </table> -->
+  <!-- <input [(ngModel)]="email" (keyup.enter)="onKeyUp()"> -->
+    <!-- <ul>
+      <li *ngFor="let course of courses">
+        {{ course }}
+      </li>
+    </ul> -->
+    <p>
+      {{ course.title | uppercase | lowercase }} <br>
+      {{ course.students | number }} <br>
+      {{ course.rating | number:'1.2-2' }} <br>
+      {{ course.price | currency:'AUD':'code':'3.2-2' }} <br>
+      {{ course.releaseDate | date:'shortDate' }} 
+    </p>
+    <p>
+      {{ text | summary:10 }}
+    </p>
+</div>
+
